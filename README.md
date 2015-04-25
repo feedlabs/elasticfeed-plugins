@@ -1,17 +1,21 @@
 Elasticfeed Plugins
 ===================
 
+Build
+-----
 You need to get latest version of `elasticfeed` to build plugin.
 ```
   go get github.com/feedlabs/elasticfeed
 ```
 
-# Clients
+Clients
+-------
 Create directory for your plugin definition by category e.g. `sensor/weather-on-mars`
 
-# Servers
-Create directory for you plugin server definition e.g. `plugins/sensor-weather-on-mars`
-```golang
+Servers
+-------
+Create directory for your plugin server definition e.g. `plugins/sensor-weather-on-mars`
+```go
 
 package main
 

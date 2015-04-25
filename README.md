@@ -1,19 +1,12 @@
 Elasticfeed Plugins
 ===================
 
-Build
------
-You need to get latest version of `elasticfeed` to build plugin.
-```
-  go get github.com/feedlabs/elasticfeed
-```
+Client
+------
+Create directory for your plugin definition by category e.g. `sensor/weather-on-mars`. Plugin definition is responsible for core logic of your plugin.
 
-Clients
--------
-Create directory for your plugin definition by category e.g. `sensor/weather-on-mars`
-
-Servers
--------
+Server
+------
 Create directory for your plugin server definition e.g. `plugins/sensor-weather-on-mars`
 ```go
 
@@ -33,4 +26,11 @@ func main() {
 	server.Serve()
 }
 
+```
+
+Build
+-----
+You need to get the latest version of `elasticfeed` to build plugin.
+```
+  go get github.com/feedlabs/elasticfeed
 ```

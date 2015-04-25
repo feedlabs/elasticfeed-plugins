@@ -29,7 +29,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	server.RegisterPipeline(new(sensor.Sensor))
+	server.RegisterSensor(new(sensor.Sensor))
 	server.Serve()
 }
 

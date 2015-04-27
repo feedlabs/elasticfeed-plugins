@@ -3,11 +3,11 @@ Elasticfeed Plugins
 
 Client
 ------
-Create directory for your plugin definition by category e.g. `sensor/weather-on-mars`. Plugin definition is responsible for core logic of your plugin.
+Create directory for your **plugin business logic** definition by category e.g. `sensor/weather-on-mars`.
 
 Server
 ------
-Create directory for your plugin server definition e.g. `plugins/sensor-weather-on-mars`
+Create directory for your **plugin server instance** definition e.g. `plugins/sensor-weather-on-mars`
 ```go
 
 package main
@@ -34,3 +34,7 @@ You need to get the latest version of `elasticfeed` to build plugin.
 ```
   go get github.com/feedlabs/elasticfeed
 ```
+
+Future goals
+------------
+![image](https://cloud.githubusercontent.com/assets/1843523/7337493/07542bca-ec2c-11e4-8750-383940f06034.png)

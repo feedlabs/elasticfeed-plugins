@@ -1,0 +1,8 @@
+{
+  "name": "pipeline-ann-supervised",
+  "type": "pipeline",
+  "description": "Artificial Neural Network pipeline plugin with supervised learning",
+  "version": "0.0.1",
+  "authors": ["kris-lab"],
+  "license": "free"
+}

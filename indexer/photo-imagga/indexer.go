@@ -1,4 +1,4 @@
-package null
+package photoimagga
 
 import (
 	"github.com/feedlabs/elasticfeed/common"
@@ -12,17 +12,17 @@ type config struct {
 	tpl *workflow.ConfigTemplate
 }
 
-type Pipeline struct {
+type Indexer struct {
 	config config
 }
 
-func (p *Pipeline) Prepare(raws ...interface{}) ([]string, error) {
+func (p *Indexer) Prepare(raws ...interface{}) ([]string, error) {
 	return nil, nil
 }
 
-func (p *Pipeline) Run(data interface {}) (interface {}, error) {
-	return nil, nil
+func (p *Indexer) Run(data interface{}) (interface{}, error) {
+	return data, nil
 }
 
-func (p *Pipeline) Cancel() {
+func (p *Indexer) Cancel() {
 }

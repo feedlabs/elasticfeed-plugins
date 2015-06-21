@@ -1,6 +1,8 @@
 Elasticfeed Plugins
 ===================
 
+(in development)
+
 Client
 ------
 Create directory for your **plugin business logic** definition by category e.g. `sensor/weather-on-mars`.
@@ -16,7 +18,7 @@ import (
   "github.com/feedlabs/elasticfeed/plugin"
   sensor "github.com/feedlabs/elasticfeed-plugin/sensor/weather-on-mars"
 )
-  
+
 func main() {
 	server, err := plugin.Server()
 	if err != nil {

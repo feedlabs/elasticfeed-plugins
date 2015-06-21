@@ -1,4 +1,4 @@
-package null
+package weather
 
 import (
 	"github.com/feedlabs/elasticfeed/common"
@@ -12,17 +12,19 @@ type config struct {
 	tpl *workflow.ConfigTemplate
 }
 
-type Pipeline struct {
+type Sensor struct {
 	config config
 }
 
-func (p *Pipeline) Prepare(raws ...interface{}) ([]string, error) {
+func (p *Sensor) Prepare(raws ...interface{}) ([]string, error) {
 	return nil, nil
 }
 
-func (p *Pipeline) Run(data interface {}) (interface {}, error) {
-	return nil, nil
+func (p *Sensor) Run(data interface{}) (interface{}, error) {
+	return data, nil
 }
 
-func (p *Pipeline) Cancel() {
+func (p *Sensor) Cancel() {
 }
+
+
